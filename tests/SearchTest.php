@@ -58,7 +58,8 @@ class SearchTest extends TestCase
                     ['from'=>'20-10-2020','to'=>'28-10-2020'],
                     ['from'=>'04-11-2020','to'=>'20-11-2020'],
                     ['from'=>'08-12-2020','to'=>'24-12-2020']
-                ],[
+                ]
+            ],[
                 'name'=>'Rotana Hotel',
                 'price'=>80.6,
                 'city'=> 'cairo' ,
@@ -67,7 +68,6 @@ class SearchTest extends TestCase
                     ['from'=>'25-10-2020','to'=>'10-11-2020'],
                     ['from'=>'05-12-2020','to'=>'18-12-2020']
                 ]
-            ]
             ]
 
         ]]);
