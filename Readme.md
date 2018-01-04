@@ -22,6 +22,7 @@
 
     localhost:8000/hotels?q=hot&sortby=Name
     localhost:8000/hotels?q=$100:$200&sortby=Price
+    localhost:8000/hotels?q=10-10-2020:15-10-2020&sortby=Price
 
 ## Test
     cd legendary-garbanzo
