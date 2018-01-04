@@ -2,7 +2,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/924aec34704f03cb2d54/maintainability)](https://codeclimate.com/github/Xloka/legendary-garbanzo/maintainability)
 
-
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Xloka/legendary-garbanzo/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Xloka/legendary-garbanzo/?branch=master)
 
 ## installation 
     
