@@ -4,6 +4,8 @@
 
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Xloka/legendary-garbanzo/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Xloka/legendary-garbanzo/?branch=master)
 
+[![Build Status](https://travis-ci.org/Xloka/legendary-garbanzo.svg?branch=master)](https://travis-ci.org/Xloka/legendary-garbanzo)
+
 ## installation 
     
     git clone 
