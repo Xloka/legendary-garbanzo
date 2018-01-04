@@ -18,7 +18,7 @@
 ## Sort
     localhost:8000/hotels?sortby={Name,Price | Name | Price}
 
-##SortSearch
+## SortSearch
 
     localhost:8000/hotels?q=hot&sortby=Name
     localhost:8000/hotels?q=$100:$200&sortby=Price
