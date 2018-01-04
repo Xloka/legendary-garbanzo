@@ -42,8 +42,8 @@ class HotelsController extends Controller
      */
     private function search($hotels, $query){
         return array_filter($hotels, function ($hotel) use ($query) {
-                        $minPrice = count(explode(':$',$query)) > 1 ? floatval(explode(':$',$query)[0]) : null;
-                        $maxPrice = count(explode(':$',$query)) > 1 ? floatval(explode(':$',$query)[1]) : null;
+                        $minPrice = (count(explode(':$',$query)) > 1) ? floatval(ltrim(explode(':$',$query)[0],'$')) : null;
+                        $maxPrice = (count(explode(':$',$query)) > 1) ? floatval(explode(':$',$query)[1]) : null;
                         $dateStart = null;
                         $dateEnd = null;
                         if (count(explode(':',$query)) > 1 && strtotime(explode(':',$query)[0])) {
@@ -51,7 +51,7 @@ class HotelsController extends Controller
                             $dateEnd = strtotime(explode(':', $query)[1]);
                         }
 
-                        if (stripos($hotel['name'], $query) !== false || stripos($hotel['city'], $query) !== false || ($hotel['price'] >= $minPrice && $hotel['price'] <= $maxPrice)) {
+                        if (stripos($hotel['name'], $query) !== false || stripos($hotel['city'], $query) !== false || (floatval($hotel['price']) >= $minPrice && floatval($hotel['price']) <= $maxPrice)) {
                             return true;
                         }
                         foreach ($hotel['availability'] as $dates){
