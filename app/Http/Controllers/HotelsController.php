@@ -25,7 +25,7 @@ class HotelsController extends Controller
         if($request->has('q')){
             $hotels = $this->search($hotels, $request->get('q'));
         }
-        if($request->has('sortby')){
+        if($request->has('sortby') && in_array(explode(',',$request->get('sortby')),['Price','Name'])){
             $hotels = $this->sortHotels($hotels, explode(',',$request->get('sortby')));
         } else {
             //default sort by name
